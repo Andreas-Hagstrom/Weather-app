@@ -1,2 +1,2 @@
 # Weather app
-Project for school using Vanilla Javascript with API's 
+Fun project using Vanilla Javascript with API's 
