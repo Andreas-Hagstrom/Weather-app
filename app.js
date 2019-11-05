@@ -39,7 +39,7 @@ window.addEventListener("load", () => {
           // formel för C
           let celsius = (temperature - 32) * (5 / 9);
 
-          // Set icon
+          // Anger ikon
           setIcons(icon, document.querySelector(".icon"));
 
           // Skifta temperatur mellan C/F
@@ -57,12 +57,12 @@ window.addEventListener("load", () => {
     });
   }
 
-  // Importerar icons från skycons
+  // Importerar ikoner från skycons
   function setIcons(icon, iconID) {
-    const skycons = new Skycons({ color: "white" }); //skapar nytt icon bibliotek + sets color to white
-    const currentIcon = icon.replace(/-/g, "_").toUpperCase(); // replaces every line with underscore + transforms text to uppercase
-    skycons.play(); // initiates the animation
-    return skycons.set(iconID, Skycons[currentIcon]); // returns the current icon from line 31
+    const skycons = new Skycons({ color: "white" }); //skapar nytt icon bibliotek + ändrar ikonens färg till vit
+    const currentIcon = icon.replace(/-/g, "_").toUpperCase(); // ersätter bindestreck med underscore + omvandlar text till stor bokstav
+    skycons.play(); // startar animation av icon
+    return skycons.set(iconID, Skycons[currentIcon]); // returnerar den aktuell ikonen från rad 31
   }
 });
 
